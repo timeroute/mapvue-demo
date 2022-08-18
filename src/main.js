@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import MapVue from "mapvue";
-import "mapvue/dist/mapvue.css";
+import "mapvue/dist/style.css";
 import App from "./App.vue";
 import router from "./router";
 import "./main.css";
