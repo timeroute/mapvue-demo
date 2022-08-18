@@ -1,6 +1,5 @@
 <script>
 import { reactive, defineComponent } from "vue";
-import { accessToken } from "../../utils/mapUtil";
 
 const data = {
   type: "FeatureCollection",
