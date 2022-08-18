@@ -7,8 +7,6 @@ import App from "./App.vue";
 import router from "./router";
 import "./main.css";
 
-console.log(process);
-
 createApp(App)
   .use(MapVue)
   .use(router)

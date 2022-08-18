@@ -1,6 +1,5 @@
 <script>
 import { defineComponent, ref, readonly } from "vue";
-import { accessToken } from "../../../utils/mapUtil";
 
 export default defineComponent({
   setup() {

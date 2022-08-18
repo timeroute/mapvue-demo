@@ -1,6 +1,5 @@
 <script>
 import { defineComponent } from "vue";
-import { accessToken } from "../../../utils/mapUtil";
 
 const poly = {
   type: "Feature",
@@ -38,7 +37,7 @@ export default defineComponent({
   setup() {
     return {
       poly,
-      accessToken,
+      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
     };
   },
 });
