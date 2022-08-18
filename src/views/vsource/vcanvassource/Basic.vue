@@ -1,6 +1,5 @@
 <script>
 import { ref, watch, reactive, defineComponent } from "vue";
-import { accessToken } from "../../../utils/mapUtil";
 
 class Circle {
   constructor(ctx, x, y, dx, dy, radius, color) {
@@ -79,7 +78,7 @@ export default defineComponent({
     return {
       canvasRef,
       state,
-      accessToken,
+      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
     };
   },
 });

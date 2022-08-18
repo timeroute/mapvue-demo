@@ -1,6 +1,5 @@
 <script>
 import { defineComponent } from "vue";
-import { accessToken } from "../../../utils/mapUtil";
 
 const line = {
   type: "Feature",

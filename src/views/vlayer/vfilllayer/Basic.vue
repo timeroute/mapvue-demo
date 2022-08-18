@@ -1,6 +1,5 @@
 <script>
 import { defineComponent, reactive } from "vue";
-import { accessToken } from "../../../utils/mapUtil";
 
 const colors = ["#f00", "#00f", "#ff0", "#0f0", "#0ff", "#fff", "#888"];
 const data = {

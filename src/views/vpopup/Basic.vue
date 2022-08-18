@@ -34,7 +34,7 @@ export default defineComponent({
     return {
       state,
       data,
-      accessToken,
+      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
       handleClick,
       handleMouseEnter,
     };
