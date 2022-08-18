@@ -1,5 +1,6 @@
 <script>
 import { reactive, defineComponent } from "vue";
+import { accessToken } from "../../utils/mapUtil";
 
 export default defineComponent({
   setup() {
@@ -19,7 +20,7 @@ export default defineComponent({
     };
 
     return {
-      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
+      accessToken,
       state,
       handleMouseMove,
       handleMouseLeave,

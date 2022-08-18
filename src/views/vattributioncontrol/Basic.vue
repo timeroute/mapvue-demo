@@ -1,10 +1,11 @@
 <script>
 import { defineComponent } from "vue";
+import { accessToken } from "../../utils/mapUtil";
 
 export default defineComponent({
   setup() {
     return {
-      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
+      accessToken,
     };
   },
 });
