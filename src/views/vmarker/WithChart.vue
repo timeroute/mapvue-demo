@@ -1,6 +1,5 @@
 <script>
 import { watch, ref, reactive, onUnmounted, defineComponent } from "vue";
-import { accessToken } from "../../utils/mapUtil";
 import { Chart, ArcElement, PieController } from "chart.js";
 
 Chart.register(ArcElement, PieController);
@@ -79,7 +78,7 @@ export default defineComponent({
     return {
       state,
       chartRef,
-      accessToken,
+      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
       toggleDraggable,
       handleClick,
       handleMouseEnter,

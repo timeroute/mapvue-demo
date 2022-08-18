@@ -36,7 +36,7 @@ const line = {
 export default defineComponent({
   setup() {
     return {
-      accessToken,
+      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
       line,
     };
   },
