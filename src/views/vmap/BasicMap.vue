@@ -1,6 +1,5 @@
 <script>
 import { defineComponent } from "vue";
-import { accessToken } from "../../utils/mapUtil";
 
 export default defineComponent({
   setup() {
@@ -8,7 +7,7 @@ export default defineComponent({
       alert("map loaded");
     };
     return {
-      accessToken,
+      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
       handleLoaded,
     };
   },
