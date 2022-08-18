@@ -10,7 +10,7 @@ export default defineComponent({
     ]);
     const index = ref(0);
     return {
-      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
+      accessToken,
       tiles,
       index,
     };

@@ -14,7 +14,7 @@ export default defineComponent({
     });
 
     return {
-      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
+      accessToken,
       state,
     };
   },

@@ -1,5 +1,6 @@
 <script>
 import { readonly, reactive, defineComponent } from "vue";
+import { accessToken } from "../../utils/mapUtil";
 import Chart from "./Chart.vue";
 
 export default defineComponent({
@@ -34,7 +35,7 @@ export default defineComponent({
     };
 
     return {
-      accessToken: process.env.VUE_APP_ACCESS_TOKEN,
+      accessToken,
       data,
       state,
       handleMouseEnter,
